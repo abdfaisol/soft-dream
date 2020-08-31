@@ -1,0 +1,77 @@
+.menu-soft {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  /*background-color: rgb(24,36,54);*/
+  padding: 25px 0;
+}
+
+.menu-soft .soft-element {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.menu-soft .sweet-menu ul li {
+  list-style: none;
+  margin: 10px 0;
+  margin-bottom: 25px;
+}
+
+.menu-soft .sweet-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.soft-element.sweet-menu {
+  background: white;
+}
+
+.menu-soft .sweet-menu ul li {
+  display: flex;
+}
+
+.menu-soft .sweet-menu ul li a i {
+  padding: 8px;
+  background-color: rgb(203,205,204);
+  font-size: 20px;
+  border-radius: 20%;
+  margin-right: 10px;
+  color: rgb(102,102,102);
+}
+
+.menu-soft .sweet-menu ul li a {
+  color: rgb(186,186,186);
+}
+
+.menu-soft .sweet-menu ul li a span {
+}
+
+.menu-soft .sweet-menu ul li:last-child {
+  margin-bottom: 0;
+}
+
+.menu-soft #active i {
+  background-color: rgb(61,231,160);
+  color: white;
+}
+
+.menu-soft #active span {
+  color: black;
+  font-weight: bold;
+}
+
+.soft-logo {
+  height: 75px;
+  background-color: rgb(92,214,126);
+}
+
+.menu-soft .soft-element {
+  margin-bottom: 0;
+}
+
+.soft-content-post a {
+  color: black;
+}
+
