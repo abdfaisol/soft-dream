@@ -4,8 +4,9 @@
   left: 0;
   width: 250px;
   height: 100%;
-  /*background-color: rgb(24,36,54);*/
+  background-color: rgb(255,255,255);
   padding: 25px 0;
+  z-index: 2;
 }
 
 .menu-soft .soft-element {
@@ -73,5 +74,47 @@
 
 .soft-content-post a {
   color: black;
+}
+
+@keyframes tap2left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes tap2right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.soft2ani {
+  animation-duration: 1s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+}
+
+@media (max-width: 576px) {
+  .soft-r-ani {
+    animation-name: tap2right;
+    display: block !Important;
+  }
+}
+
+@media (max-width: 576px) {
+  .soft-l-ani {
+    animation-name: tap2left;
+    display: block !important;
+  }
+}
+
+.menu-mobile-soft {
+  display: none !important;
 }
 

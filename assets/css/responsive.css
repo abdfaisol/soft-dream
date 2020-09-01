@@ -1,6 +1,13 @@
 @media (max-width: 576px) {
   .menu-soft {
     display: none;
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 576px) {
+  .menu-mobile-soft {
+    display: flex !important;
   }
 }
 
