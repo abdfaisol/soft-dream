@@ -43,7 +43,7 @@
 }
 
 .ads-square {
-  width: 250px;
+  min-width: 250px;
   height: 250px;
   background-color: tomato;
 }
@@ -184,5 +184,13 @@
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+#soft-footer div {
+  margin-bottom: 15px;
+}
+
+#soft-footer div:last-child {
+  margin-bottom: 0;
 }
 
