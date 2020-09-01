@@ -25,6 +25,7 @@
   position: absolute;
   top: 0;
   right: 0;
+  height: calc(1.5em + .75rem + 2px);
 }
 
 .soft-crap {
@@ -36,9 +37,9 @@
 
 .ads-billboard {
   max-width: 970px;
-  min-height: 250px;
+  /*min-height: 250px;*/
   background-color: tomato;
-  width: 970px;
+  /*width: 970px;*/
 }
 
 .ads-square {
@@ -170,5 +171,18 @@
 
 .post .table {
   margin-bottom: 45px;
+}
+
+.ads-billboard img {
+  width: 100%;
+  height: auto;
+}
+
+.menu-mobile-soft {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/config.css">
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/post-component.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -36,9 +37,15 @@
         </div>
     </div>
     <!-- End: menu fixed -->
-    <div class="soft-wrapper d-flex flex-lg-column" style="padding-bottom: 0;">
+    <div class="soft-wrapper d-flex flex-column" style="padding-bottom: 0;">
+        <div id="navigation" class="soft-element justify-content-between d-flex menu-mobile-soft">
+            <div>
+                <h4><strong>Sidiq</strong></h4>
+            </div>
+            <div><button class="btn btn-primary" type="button"><i class="fab fa-magento"></i></button></div>
+        </div>
         <!-- Start: header -->
-        <div class="soft-element d-flex flex-lg-row justify-content-between">
+        <div id="first-element" class="soft-element d-flex flex-lg-row justify-content-between">
             <!-- Start: welcome -->
             <div class="soft-welcome"><i class="far fa-moon"></i>
                 <p>Good Afternoon, visitor</p>
@@ -50,7 +57,7 @@
         <!-- Start: header ads -->
         <div class="soft-element d-flex align-content-center justify-content-lg-center">
             <div class="soft-crap">
-                <div class="ads-billboard"></div>
+                <div class="ads-billboard"><img src="assets/img/970x250-starbucks.jpg"></div>
             </div>
         </div>
         <!-- End: header ads -->
@@ -161,7 +168,7 @@
                     </div>
                     <!-- End: post 1 -->
                     <!-- Start: post 1 -->
-                    <div class="d-flex flex-row soft-post justify-content-center">
+                    <div id="navigation" class="d-flex flex-row soft-post justify-content-center">
                         <!-- Start: tag -->
                         <div class="soft-category d-flex soft-pagenavigation"><a id="disabled" class="soft-arrow" href="#"><span><i class="la la-angle-left"></i></span></a><a href="#"><span>1</span></a><a href="#"><span>2</span></a><a href="#"><span>3</span></a><a href="#"><span>4</span></a><a href="#"><span>9238</span></a>
                             <a
