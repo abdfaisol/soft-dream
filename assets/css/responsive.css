@@ -4,6 +4,11 @@
     transform: translateX(-100%);
   }
 }
+@media (max-width: 576px) {
+  .soft-p-home img {
+    width: 100%
+  }
+}
 
 @media (max-width: 576px) {
   .menu-mobile-soft {
