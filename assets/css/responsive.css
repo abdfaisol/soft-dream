@@ -6,7 +6,7 @@
 }
 @media (max-width: 576px) {
   .soft-p-home img {
-    width: 100%
+    width: 100%; max-width: 100%
   }
 }
 
