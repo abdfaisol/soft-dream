@@ -192,3 +192,23 @@
   margin-bottom: 0;
 }
 
+.msg {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+.msg-success {
+  background: rgb(208,232,249);
+}
+
+.msg i {
+  margin: 0 15px 0 5px;
+}
+
+.msg-success:hover {
+  color: rgb(58,60,61);
+}
+
