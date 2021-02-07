@@ -13,3 +13,9 @@ $("#tap2menu").click(function(){
   }
   
 })
+var msg = document.getElementsByClassName('msg');
+for (var i = 0; i < msg.length; i++) {
+	console.log(i);
+	var elem = "<i class='fas fa-info-circle'></i>";
+	msg[i].insertAdjacentHTML('afterbegin',elem);
+}
