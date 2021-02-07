@@ -24,8 +24,9 @@ for (var i = 0; i < el.length; i++) {
   var word0 = el[i].textContent.split(" ")[0];
   var word = el[i].textContent.split('')[0];
 	console.log("index ke "+i+" mengadung dengan kata depan \""+word0+"\" dengan huruf didepannya =>"+word);
-  if(word == '\"'){
+  if(word == '\"' or word == '“'){
     el[i].classList.add("dialog");
+	  console.log('Kondisi TRUE DIALOG');
 	  console.log('Berhasil menambahkan');
   }
 }
