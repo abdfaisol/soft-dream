@@ -26,5 +26,6 @@ for (var i = 0; i < el.length; i++) {
 	console.log("index ke "+i+" mengadung dengan kata depan \""+word0+"\" dengan huruf didepannya =>"+word);
   if(word == '\"'){
     el[i].classList.add("dialog");
+	  console.log('Berhasil menambahkan');
   }
 }
