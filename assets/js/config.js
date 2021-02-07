@@ -27,5 +27,7 @@ for (var i = 0; i < el.length; i++) {
   if(word == '\"' || word == '“'){
 	  console.log('yes ini dialog');
     el[i].classList.add("dialog");
+  }else{
+	  console.log('ini bukan dialog');
   }
 }
