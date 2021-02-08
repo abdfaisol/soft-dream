@@ -23,11 +23,11 @@ var el = document.getElementsByClassName('post')[0].getElementsByTagName('p');
 for (var i = 0; i < el.length; i++) {
   var word0 = el[i].textContent.split(" ")[0];
   var word = el[i].textContent.split('')[0];
-	console.log("index ke "+i+" mengadung dengan kata depan \""+word0+"\" dengan huruf didepannya =>"+word);
+// 	console.log("index ke "+i+" mengadung dengan kata depan \""+word0+"\" dengan huruf didepannya =>"+word);
   if(word == '\"' || word == '“'){
-	  console.log('yes ini dialog');
+// 	  console.log('yes ini dialog');
     el[i].classList.add("dialog");
   }else{
-	  console.log('ini bukan dialog');
+// 	  console.log('ini bukan dialog');
   }
 }
