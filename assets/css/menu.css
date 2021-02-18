@@ -1,0 +1,173 @@
+.menu-soft {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: rgb(255,255,255);
+  padding: 25px 0;
+  z-index: 2;
+}
+
+.menu-soft .soft-element {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.menu-soft .sweet-menu ul li {
+  list-style: none;
+  margin: 10px 0;
+  margin-bottom: 25px;
+}
+
+.menu-soft .sweet-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.soft-element.sweet-menu {
+  /*background: white;*/
+}
+
+.menu-soft .sweet-menu ul li {
+  display: flex;
+}
+
+.menu-soft .sweet-menu ul li a i {
+  padding: 8px;
+  background-color: rgb(203,205,204);
+  font-size: 20px;
+  border-radius: 20%;
+  margin-right: 10px;
+  color: rgb(102,102,102);
+}
+
+.menu-soft .sweet-menu ul li a {
+  color: rgb(186,186,186);
+}
+
+.menu-soft .sweet-menu ul li a span {
+}
+
+.menu-soft .sweet-menu ul li:last-child {
+  margin-bottom: 0;
+}
+
+.menu-soft .active i {
+  background-color: rgb(61,231,160) !important;
+  color: white !important;
+}
+
+.menu-soft .active span {
+  color: black;
+  font-weight: bold;
+}
+
+.soft-logo {
+  /*min-height: 44px;*/
+  /*background-color: rgb(92,214,126);*/
+  height: 44px;
+}
+
+.menu-soft .soft-element {
+  margin-bottom: 0;
+}
+
+.soft-content-post a {
+  color: black;
+}
+
+@keyframes tap2left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes tap2right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.soft2ani {
+  animation-duration: 1s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+}
+
+@media (max-width: 576px) {
+  .soft-r-ani {
+    animation-name: tap2right;
+    display: block !Important;
+  }
+}
+
+@media (max-width: 576px) {
+  .soft-l-ani {
+    animation-name: tap2left;
+    display: block !important;
+  }
+}
+
+.soft-logo img {
+  height: 35px;
+  width: auto;
+}
+
+.soft-logo a {
+  display: flex;
+  align-items: center;
+  color: rgb(37,37,37);
+}
+
+.soft-logo span {
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#tap2menu {
+  opacity: 0.6;
+}
+
+#main-control {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navigator-sweet {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: rgb(52,52,52);
+  padding: 5px;
+  border-radius: 10px;
+  border-bottom-right-radius: 0;
+  z-index: 1;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navigator-sweet a {
+  color: white;
+  padding: 10px;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sweet-open {
+  transform: scale(1);
+}
+
