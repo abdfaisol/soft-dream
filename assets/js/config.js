@@ -78,15 +78,6 @@ for (var i = 0; i < msg.length; i++) {
 	var elem = "<i class='fas fa-info-circle'></i>";
 	msg[i].insertAdjacentHTML('afterbegin',elem);
 }
-var el = document.getElementsByClassName('post')[0].getElementsByTagName('p');
-for (var i = 0; i < el.length; i++) {
-  var word0 = el[i].textContent.split(" ")[0];
-  var word = el[i].textContent.split('')[0];
-	console.log("index ke "+i+" mengadung dengan kata depan \""+word0+"\" dengan huruf didepannya =>"+word);
-  if(word == '\"'){
-    el[i].classList.add("dialog");
-  }
-}
 document.addEventListener('keydown', (i) => {
     if(i.key == "ArrowLeft"){
   var sb = document.getElementById('before').getAttribute('href');
