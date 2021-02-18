@@ -1,0 +1,180 @@
+#main-control {
+}
+
+@media (max-width: 576px) {
+  .window-do {
+    display: none;
+    /*transform: translateX(-100%);*/
+  }
+}
+
+@media (max-width: 576px) {
+  .sweet-menu {
+    /*display: none;*/
+    /*transform: translateX(-100%);*/
+  }
+}
+
+@media (max-width: 576px) {
+  .menu-soft {
+    height: auto;
+    width: 100%;
+    padding: 0;
+    background: white !important;
+    box-shadow: 0px 0px 15px 0px rgba(184,184,184,0.4);
+  }
+}
+
+@media (max-width: 576px) {
+  #main-control {
+    display: flex;
+    flex-direction: row !important;
+    flex-grow: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  #main-control .soft-logo {
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .soft-wrapper {
+    padding-left: 0;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .soft-element {
+    flex-direction: column !important;
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #main-control button {
+    display: none;
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .sweet-menu {
+    position: relative !Important;
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  #first-element {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .soft-post {
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .soft-content-post {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .soft-cover-post {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sweet-post {
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .post {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  #navigation {
+    /*flex-direction: row !Important;*/
+  }
+}
+
+@media (max-width: 576px) {
+  .eye-soft {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.sweet-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.full-h {
+  height: 100%;
+}
+
+.crap-scroll::-webkit-scrollbar {
+  width: 5px;
+  background: transparent;
+  /*border-radius: 100vw;*/
+}
+
+/*  Optional: show position indicator in red  */
+
+.crap-scroll::-webkit-scrollbar-thumb {
+  background: rgba(50,50,50,0.07);
+  border-radius: 100vw;
+}
+
+@media (min-width: 768px) {
+  #main-control {
+    flex-grow: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #item-menu {
+    margin: 0 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  #containet-menu {
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  #item-menu .sweet-menu {
+    padding: 0 10px 0 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .crap-scroll {
+    transform: translate(0);
+  }
+}
+
+.crap-scroll:hover::-webkit-scrollbar-thumb {
+  background: rgba(50,50,50,0.35);
+}
+
