@@ -45,7 +45,7 @@
 
 .ads-square {
   min-width: 250px;
-  min-height: 250px;
+/*   min-height: 250px; */
   background-color: tomato;
 }
 
@@ -55,7 +55,7 @@
 
 #fb-color {
   background-color: blue;
-  height: 400px;
+/*   height: 400px; */
 }
 
 .sweet-post {
