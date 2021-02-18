@@ -1,7 +1,12 @@
 .home-heading {
   font-weight: bold;
 }
-
+.play{
+  box-shadow: 0 0 0 0.2rem rgb(38, 143, 255 , 50%);
+  color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
 .soft-category {
   flex-wrap: wrap;
   flex-flow: wrap;
