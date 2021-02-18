@@ -12,7 +12,7 @@
   padding: 25px;
   margin-bottom: 25px;
 }
-.widget-content .soft-crap:last-child(
+.widget-content .soft-crap:last-child{
 margin-bottom:0
 }
 .soft-welcome {
