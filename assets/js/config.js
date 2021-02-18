@@ -123,7 +123,7 @@ window.onload= function(e) {
   if(i.length == 1){
     p.appendChild(i[0]);
   }
-    if(window.innerWidth <= 561){
+    if(window.innerWidth <= 576){
   var h = document.getElementsByClassName('eye-soft')[0].offsetHeight + 20;
   document.getElementsByClassName('soft-wrapper')[0].style.marginTop = h+'px';
 }else{
@@ -131,7 +131,7 @@ window.onload= function(e) {
 }
 };
 window.onresize = function(e) {
-    if(window.innerWidth <= 561){
+    if(window.innerWidth <= 576){
   var h = document.getElementsByClassName('eye-soft')[0].offsetHeight + 20;
   document.getElementsByClassName('soft-wrapper')[0].style.marginTop = h+'px';
 }else{
