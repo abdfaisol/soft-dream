@@ -1,26 +1,15 @@
-// $("#tap2menu").click(function(){
-//   var menu = document.getElementsByClassName('eye-soft')[0];
-//   var target = $(".sweet-menu");
-//   var status = target.hasClass("nonaktif");
-//     console.log(status);
-//   if(status == false){
-//     menu.style.height = '100%';
-//     target.css("display","block");
-//     target.css("transform","translateX(0%)");
-//     target.css("transition","2s");
-//     target.removeClass("nonaktif");
-//     target.addClass("aktif");
-//   }else{ 
-//     target.css("display","none");
-//     target.css("transform","translateX(100%)");
-//     target.css("transition","2s");
-//     target.removeClass("aktif");
-//     target.addClass("nonaktif");
-//     menu.style.height = 'auto';
-    
-//   }
-  
-// })
+var el = document.getElementsByClassName('post')[0].getElementsByTagName('p');
+for (var i = 0; i < el.length; i++) {
+  var word0 = el[i].textContent.split(" ")[0];
+  var word = el[i].textContent.split('')[0];
+// 	console.log("index ke "+i+" mengadung dengan kata depan \""+word0+"\" dengan huruf didepannya =>"+word);
+  if(word == '\"' || word == '“'){
+// 	  console.log('yes ini dialog');
+    el[i].classList.add("dialog");
+  }else{
+// 	  console.log('ini bukan dialog');
+  }
+}
 
 function playaudio(i){
   var x = document.getElementById("audio"); 
