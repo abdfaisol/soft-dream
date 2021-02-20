@@ -1,5 +1,6 @@
 var ek = document.getElementsByClassName('post');
-if(!ek){
+var nek = ek.length;
+if(nek > 0){
 	var el = ek[0].getElementsByTagName('p');
 for (var i = 0; i < el.length; i++) {
   var word0 = el[i].textContent.split(" ")[0];
