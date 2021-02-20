@@ -1,4 +1,6 @@
-var el = document.getElementsByClassName('post')[0].getElementsByTagName('p');
+var ek = document.getElementsByClassName('post');
+if(!ek){
+	var el = ek[0].getElementsByTagName('p');
 for (var i = 0; i < el.length; i++) {
   var word0 = el[i].textContent.split(" ")[0];
   var word = el[i].textContent.split('')[0];
@@ -10,6 +12,8 @@ for (var i = 0; i < el.length; i++) {
 // 	  console.log('ini bukan dialog');
   }
 }
+}
+
 
 function playaudio(i){
   var x = document.getElementById("audio"); 
