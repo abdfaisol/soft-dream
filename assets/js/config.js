@@ -121,7 +121,7 @@ window.onresize = function(e) {
 window.onscroll = function(ev) {
 	
 //   console.log(document.getElementsByClassName('navigator-sweet').length);
-	if(!document.getElementsByClassName('navigator-sweet').length != 0){
+	if(document.getElementsByClassName('navigator-sweet').length != 0){
   if((window.innerHeight + window.scrollY) >= document.getElementsByClassName('sweet-post')[0].getBoundingClientRect().height + document.getElementsByClassName('header-ads')[0].getBoundingClientRect().height + 200){
       // console.log('wow post berakhir');
        document.getElementsByClassName('navigator-sweet')[0].classList.remove("sweet-open");
