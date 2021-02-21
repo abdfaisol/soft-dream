@@ -416,4 +416,65 @@ margin-bottom:0
 .gridcover {
   margin-right: 10px;
 }
+.input-gray {
+  padding: 5px;
+  background: rgba(128,128,128,0.14);
+  border: none;
+  border-radius: 5px;
+}
 
+.cari-daftar {
+  margin: 0 10px;
+}
+
+.cari-daftar input {
+  padding-left: 10px;
+  padding-right: 35px;
+}
+
+.cari-daftar i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  padding: 0 15px;
+}
+
+.daftar-isi {
+  margin: 15px 0;
+  max-height: 350px;
+  /*height: 350px;*/
+  overflow-y: scroll;
+}
+
+.bungkusan {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.daftar-isi ul {
+  list-style-type: none;
+  padding: 10px 0;
+}
+
+.daftar-isi li {
+  margin: 5px 0;
+  min-height: 44px;
+  display: flex;
+  border-bottom: 1px solid rgb(225,225,225);
+}
+
+.daftar-isi li:last-child {
+  border-bottom: 0;
+}
+
+.none {
+  display: none;
+}
+
+.daftar-isi li a {
+  display: flex;
+  align-items: center;
+  color: rgb(61,61,61);
+}
