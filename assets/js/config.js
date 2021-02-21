@@ -120,7 +120,7 @@ window.onresize = function(e) {
 
 window.onscroll = function(ev) {
 	
-  console.log(!document.getElementsByClassName('navigator-sweet').length);
+  console.log(document.getElementsByClassName('navigator-sweet').length != 0);
 	if(!document.getElementsByClassName('navigator-sweet').length == true){
   if((window.innerHeight + window.scrollY) >= document.getElementsByClassName('sweet-post')[0].getBoundingClientRect().height + document.getElementsByClassName('header-ads')[0].getBoundingClientRect().height + 200){
       // console.log('wow post berakhir');
