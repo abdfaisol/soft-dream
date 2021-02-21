@@ -96,7 +96,7 @@ window.onload= function(e) {
 var j = document.getElementsByClassName('portal-awal');
 	var k = document.getElementsByClassName('soft-category')[0];
 	if(j.length == 1){
-		document.getElementsByClassName('home-heading')[0].style.diplay='none';
+		document.getElementById('judulpos').style.display="none";
     idk.appendChild(k);
   }
   if(i.length == 1){
