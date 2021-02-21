@@ -120,6 +120,7 @@ window.onresize = function(e) {
 
 window.onscroll = function(ev) {
   // console.log(window.innerHeight + window.scrollY);
+	if(document.getElementsByClassName('navigator-sweet').length == 1){
   if((window.innerHeight + window.scrollY) >= document.getElementsByClassName('sweet-post')[0].getBoundingClientRect().height + document.getElementsByClassName('header-ads')[0].getBoundingClientRect().height + 200){
       // console.log('wow post berakhir');
        document.getElementsByClassName('navigator-sweet')[0].classList.remove("sweet-open");
@@ -144,7 +145,7 @@ window.onscroll = function(ev) {
   //     var h = document.getElementsByClassName('eye-soft')[0].offsetHeight + 20;
   // document.getElementsByClassName('soft-wrapper')[0].style.marginTop = h+'px';
     }
-    
+    }
 };
 function sortListDir(e) {
   var list, i, switching, b, shouldSwitch, dir, switchcount = 0;
