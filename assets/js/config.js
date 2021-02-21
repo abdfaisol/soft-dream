@@ -152,7 +152,90 @@ window.onscroll = function(ev) {
     }
     
 };
-
+function sortListDir(e) {
+  var list, i, switching, b, shouldSwitch, dir, switchcount = 0;
+  list = document.getElementById("id01");
+  switching = true;
+  // Set the sorting direction to ascending:
+  dir = "asc"; 
+  // Make a loop that will continue until no switching has been done:
+  while (switching) {
+    // start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      var bi = b[i].getElementsByTagName("a")[0];
+      var bii = b[i + 1].getElementsByTagName("a")[0];
+      var numb = bi.innerHTML.match(/\d/g);
+      // console.log(numb);
+      numb = numb.join("");
+      // console.log(numb);
+      var numb2 = bii.innerHTML.match(/\d/g);
+      // console.log(numb2);
+      numb2 = numb2.join("");
+      // console.log(numb2);
+      /* check if the next item should switch place with the current item,
+      based on the sorting direction (asc or desc): */
+      var icon = e.getElementsByTagName("i")[0].classList;
+      // console.log(icon);
+      if (dir == "asc") {
+        if (Number(numb) > Number(numb2)) {
+          /* if next item is alphabetically lower than current item,
+          mark as a switch and break the loop: */
+          shouldSwitch = true;
+          console.log("asc");
+          icon.remove("fa-sort-numeric-desc");
+          icon.add("fa-sort-numeric-asc");
+          break;
+        }
+      } else if (dir == "desc") {
+        if (Number(numb) < Number(numb2)) {
+          /* if next item is alphabetically higher than current item,
+          mark as a switch and break the loop: */
+          // console.log("desc");
+          icon.remove("fa-sort-numeric-asc");
+          icon.add("fa-sort-numeric-desc");
+          shouldSwitch= true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark that a switch has been done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+      // Each time a switch is done, increase switchcount by 1:
+      switchcount ++;
+    } else {
+      /* If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again. */
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+function caridata() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("isidata");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("id01");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
 
 
 
