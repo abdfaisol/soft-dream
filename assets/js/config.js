@@ -119,7 +119,8 @@ window.onresize = function(e) {
 };
 
 window.onscroll = function(ev) {
-  // console.log(window.innerHeight + window.scrollY);
+	
+  console.log(!document.getElementsByClassName('navigator-sweet').length);
 	if(!document.getElementsByClassName('navigator-sweet').length == true){
   if((window.innerHeight + window.scrollY) >= document.getElementsByClassName('sweet-post')[0].getBoundingClientRect().height + document.getElementsByClassName('header-ads')[0].getBoundingClientRect().height + 200){
       // console.log('wow post berakhir');
