@@ -416,6 +416,9 @@ margin-bottom:0
 .gridcover {
   margin-right: 10px;
 }
+.p-no-margin p {
+  margin: 0;
+}
 .input-gray {
   padding: 5px;
   background: rgba(128,128,128,0.14);
