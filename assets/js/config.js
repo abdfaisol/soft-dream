@@ -64,19 +64,6 @@ function menutab(){
      
   }
 }
-// const menu = document.getElementsByClassName('eye-soft')[0];
-// const hamburgerButtonElement = document.querySelector("#tap2menu");
-// const drawerElement = document.querySelector("#item-menu");
- 
-// hamburgerButtonElement.addEventListener("click", event => {
-//   menu.classList.toggle("full-h");
-//   setTimeout(
-//     function togleclass(){
-//     drawerElement.classList.toggle("open");
-//   },1000);
-//  event.stopPropagation();
-// });
- 
 var msg = document.getElementsByClassName('msg');
 for (var i = 0; i < msg.length; i++) {
 	console.log(i);
@@ -105,6 +92,13 @@ window.onload= function(e) {
 
   var i = document.getElementsByClassName('sweet-portal');
   var p = document.getElementsByClassName('f-swet')[0];
+	var idk = document.getElementsByClassName('detail-cov')[0];
+var j = document.getElementsByClassName('portal-awal');
+	var k = document.getElementsByClassName('soft-category')[0];
+	if(j.length == 1){
+		document.getElementsByClassName('home-heading')[0].style.diplay='none';
+    idk.appendChild(k);
+  }
   if(i.length == 1){
     p.appendChild(i[0]);
   }
