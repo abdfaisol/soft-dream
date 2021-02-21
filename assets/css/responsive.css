@@ -178,3 +178,16 @@
   background: rgba(50,50,50,0.35);
 }
 
+
+.sweet-scroll::-webkit-scrollbar {
+  width: 5px;
+  background: transparent;
+  /*border-radius: 100vw;*/
+}
+.sweet-scroll::-webkit-scrollbar-thumb {
+  background: rgba(50,50,50,0.07);
+  border-radius: 100vw;
+}
+.sweet-scroll:hover::-webkit-scrollbar-thumb {
+  background: rgba(50,50,50,0.35);
+}
