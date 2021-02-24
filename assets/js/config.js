@@ -100,6 +100,7 @@ var j = document.getElementsByClassName('portal-awal');
     idk.appendChild(k);
   }
   if(i.length == 1){
+	  document.getElementById("cekportal").remove();
     p.appendChild(i[0]);
   }
     if(window.innerWidth <= 576){
