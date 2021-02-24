@@ -102,6 +102,8 @@ var j = document.getElementsByClassName('portal-awal');
   if(i.length == 1){
 	  document.getElementById("cekportal").remove();
     p.appendChild(i[0]);
+  }else{
+	   document.getElementById("cekportal").remove();
   }
     if(window.innerWidth <= 576){
   var h = document.getElementsByClassName('eye-soft')[0].offsetHeight + 20;
