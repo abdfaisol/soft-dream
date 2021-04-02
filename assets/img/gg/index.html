@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pemula Designer Website</title>
+	<!css external>
+	<style type="text/css">
+	.galery{
+		max-width: 500px;
+	}
+	.galery img{
+		width: 100%;
+		height: auto;
+	}
+	.wrap{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="galery">
+		</div>
+	</div>
+	<script type="text/javascript">
+	var con = 226;
+	var namaClass = 'galery';
+	var e = document.getElementsByClassName(namaClass)[0];
+	for (var i = 1; i <= con; i++) {
+		var elem = "<img src='1 ("+i+").jpg'>";
+		e.insertAdjacentHTML('beforeend',elem);
+	}
+</script>
+</body>
+</html>
