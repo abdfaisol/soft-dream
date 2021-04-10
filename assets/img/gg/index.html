@@ -5,12 +5,19 @@
 	<title>Pemula Designer Website</title>
 	<!css external>
 	<style type="text/css">
+		body{margin:0;padding:0}
+	@media screen and (max-width: 400px) {
+		.galery{
+			width: 100%
+		}
+	}
 	.galery{
 		max-width: 500px;
 	}
 	.galery img{
 		width: 100%;
 		height: auto;
+		display: block;
 	}
 	.wrap{
 		width: 100%;
@@ -29,7 +36,7 @@
 	var con = 226;
 	var namaClass = 'galery';
 	var e = document.getElementsByClassName(namaClass)[0];
-	for (var i = 1; i <= con; i++) {
+	for (var i = 0; i <= con; i++) {
 		var elem = "<img src='1 ("+i+").jpg'>";
 		e.insertAdjacentHTML('beforeend',elem);
 	}
